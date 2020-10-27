@@ -1,0 +1,34 @@
+body {
+    background-color: #bdbbbb86;
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(255, 211, 65);
+}
+
+p {
+    font-size: 17px;
+}
+
+.textbox {
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.numberbox {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.button {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+}
