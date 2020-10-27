@@ -1,34 +1,9 @@
 body {
-    background-color: #bdbbbb86;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    background-color: rgb(231, 231, 231);
 }
 
 h1 {
-    font-size: 45px;
-    color: rgb(255, 211, 65);
-}
-
-p {
-    font-size: 17px;
-}
-
-.textbox {
-    justify-content: space-between;
-    display: flex;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.numberbox {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.button {
-    display: flex;
-}
-
-footer {
-    text-align: center;
+    color: rgb(245, 191, 42);
+    font-size: 50px;
 }

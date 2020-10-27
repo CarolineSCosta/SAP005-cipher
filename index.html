@@ -9,26 +9,34 @@
 
 <body>
     <header>
-        <h1>Cifra de César</h1>
-        <p>
-            Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius
-            cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu.
-        </p>
+        <h1>Confundus.</h1>
+        <p class="description">Esse site está encantado com o feitiço Confundus para te ajudar a enviar mensagens secretas.</p>
+        <hr>
     </header>
-    <section>
+    <div class="container">
+        <dl>
+            <dt>Dicas de uso:</dt>
+            <dd>Utilize apenas letras, a mensagem não pode conter caracteres especiais.</dd>
+            <dd>Para decifrar, apenas a chave correta irá exibir o conteúdo original. </dd>
+        </dl>
+    </div>
+    <main>
         <div class="textbox">
-            <input type="text" name="criptografar" size="50" maxlength="250" placeholder="Digite o texto para criptografar">
-            <input type="text" name="descriptografar" size="50" maxlength="250" placeholder="Digite o texto para descriptografar">
+            <label id="msg">Mensagem:</label>
+            <textarea id="messageTextArea" cols="40" rows="10" placeholder="Digite a mensagem..."></textarea>
         </div>
-        <div class="numberbox">
-            <input type="number" name="chave" size="5" min="0">
-            <input type="number" name="chave2" min="0">
+        <div id="offsetKey">
+            <input type="number" name="chave" min="1" placeholder="Chave">
         </div>
-        <div class="button">
-            <button type="submit">Criptografar</button>
-            <button type="submit">Descriptografar</button>
+        <div class="buttons">
+            <button id="cipherButton" type="submit" onclick="cipher()">Crifrar</button>
+            <button id="decipherButton" type="submit" onclick="decipher()">Decifar</button>
         </div>
-    </section>
+        <div>
+            <h3>Mensagem com confundus:</h3>
+            <p id="finalMsg"></p>
+        </div>
+    </main>
     <footer>©CarolineCosta</footer>
     <script src="index.js" type="module">
     </script>
