@@ -13,8 +13,6 @@ cipherButton.addEventListener('click', cipherClick)
 function cipherClick() {
     let originalMessage = textArea.value
     let offset = Number(numberInput.value)
-    let messageCharCode = Number(originalMessage.charCodeAt())
-    let charDecode = ((messageCharCode - 65 + offset) % 26) + 65
-    let cipherMessage = String.fromCharCode(charDecode)
-    resultMsg.innerHTML = `A sua mensagem é ${cipherMessage}`
+    let cipherMessage = cipher.encode(offset, originalMessage)
+    resultMsg.innerHTML = cipherMessage
 }
