@@ -16,3 +16,12 @@ function cipherClick() {
     let cipherMessage = cipher.encode(offset, originalMessage)
     resultMsg.innerHTML = cipherMessage
 }
+
+decipherButton.addEventListener('click', decipherClick)
+
+function decipherClick() {
+    let originalMessage = textArea.value
+    let offset = Number(numberInput.value)
+    let decipherMessage = cipher.decode(offset, originalMessage)
+    resultMsg.innerHTML = decipherMessage
+}
