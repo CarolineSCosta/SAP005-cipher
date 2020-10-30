@@ -10,27 +10,24 @@
 <body>
     <header>
         <h1>Confundus.</h1>
-        <p class="description">Esse site está encantado com o feitiço Confundus para te ajudar a enviar mensagens secretas.</p>
-        <hr>
     </header>
-    <div class="container">
-        <dl>
-            <dt>Dicas de uso:</dt>
-            <dd>Utilize apenas letras, a mensagem não pode conter caracteres especiais.</dd>
-            <dd>Apenas a chave correta irá decifrar e exibir o conteúdo original. </dd>
-        </dl>
-    </div>
     <main>
+        <div class="container">
+            <p class="description">Esse site está encantado com o feitiço Confundus para te ajudar a enviar mensagens secretas.</p>
+            <p>Dicas de uso:</p>
+            <p>Utilize apenas letras, a mensagem não pode conter caracteres especiais.</p>
+            <p>Apenas a chave correta irá decifrar e exibir o conteúdo original. </p>
+        </div>
         <div class="textbox">
             <label id="msg">Mensagem:</label>
-            <textarea id="messageTextArea" cols="40" rows="10" placeholder="Digite a mensagem..."></textarea>
+            <textarea style="resize: none" id="messageTextArea" cols="40" rows="10" placeholder="Digite a mensagem..."></textarea>
         </div>
         <div class="key">
             <label id="keyName">Chave:</label>
-            <input id="offsetKey" type="number" name="chave" placeholder="Chave">
+            <input id="offsetKey" type="number" name="chave" placeholder="Nº">
         </div>
         <div class="buttons">
-            <button id="cipherButton" type="button">Crifrar</button>
+            <button id="cipherButton" type="button">Cifrar</button>
             <button id="decipherButton" type="button">Decifar</button>
         </div>
         <div>

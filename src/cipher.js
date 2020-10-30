@@ -1,13 +1,21 @@
 const cipher = {
 
     encode: function(offset, string) {
+        const firstLetterAscii = 65
+        const alphabetLenght = 25
         let messageCharCode = Number(string.toUpperCase().charCodeAt())
-        let charDecode = ((messageCharCode - 65 + offset) % 26) + 65
+        let charDecode = ((messageCharCode - firstLetterAscii + offset) % alphabetLenght) + firstLetterAscii
         let cipherMessage = String.fromCharCode(charDecode)
         return cipherMessage
     },
 
     decode: function(offset, string) {
+        const firstLetterAscii = 65
+        const alphabetLenght = 25
+        let messageCharCode = Number(string.toUpperCase().charCodeAt())
+        let charDecode = ((messageCharCode - firstLetterAscii - offset) % alphabetLenght) + firstLetterAscii
+        let cipherMessage = String.fromCharCode(charDecode)
+        return cipherMessage
 
     }
 };
