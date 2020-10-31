@@ -7,33 +7,33 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="body">
     <header>
-        <h1>CONFUNDUS.</h1>
+        <h1 class="title">CONFUNDUS.</h1>
     </header>
-    <main>
-        <div class="container">
-            <p class="description">Esse site está encantado com o feitiço Confundus para te ajudar a enviar mensagens secretas.</p>
-            <p><strong>Dicas de uso:</strong><br>Utilize apenas letras, a mensagem não pode conter caracteres especiais.<br>Apenas a chave correta irá decifrar e exibir o conteúdo original.</p>
-        </div>
-        <div class="textbox">
-            <label id="msg">Mensagem:</label><br>
-            <textarea style="resize: none" id="messageTextArea" rows="4" placeholder="Digite a mensagem..."></textarea>
-        </div>
-        <div class="key">
-            <label id="keyName">Chave:</label>
-            <input id="offsetKey" type="number" name="chave" placeholder="Nº">
-        </div>
-        <div class="buttons">
-            <button id="cipherButton" type="button">Cifrar</button>
-            <button id="decipherButton" type="button">Decifar</button>
+    <main class="main">
+        <div>
+            <p class="description">Para te ajudar a enviar mensagens secretas durante a guerra bruxa, utilizamos o encantamento confundus para codificar e descodificar o seu conteúdo. Não esqueça que somente chave correta irá exibir o conteúdo original!</p>
         </div>
         <div>
-            <h3>Mensagem com confundus:</h3>
-            <p class="result" id="finalMsg"></p>
+            <label class="label" id="msg">Mensagem:</label><br>
+            <textarea class="textBox" id="messageTextArea" style="resize: none" rows="4" placeholder="Digite a mensagem..."></textarea>
+        </div>
+        <div>
+            <label class="label" id="keyName">Chave:</label><br>
+            <input class="key" id="offsetKey" type="number" name="chave" placeholder="Nº">
+        </div>
+        <div>
+            <button class="buttons" id="cipherButton" type="button">Codificar</button>
+            <button class="buttons" id="decipherButton" type="button">Descodificar</button>
+            <button class="buttons" id="clearButton" type="button">Limpar</button>
+        </div>
+        <div>
+            <label class="label">Confundus:</label>
+            <textarea class="textBox" id="finalMsg" style="resize: none" rows="4" placeholder="Resultado da mensagem com encantamento..."></textarea>
         </div>
     </main>
-    <footer>©CarolineCosta</footer>
+    <footer class="footer">©CarolineCosta</footer>
     <script src="index.js" type="module">
     </script>
 </body>
