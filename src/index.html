@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -13,15 +14,17 @@
     </header>
     <main class="main">
         <div>
-            <p class="description">Para te ajudar a enviar mensagens secretas durante a guerra bruxa, utilizamos o encantamento confundus para codificar e descodificar o seu conteúdo. Não esqueça que somente chave correta irá exibir o conteúdo original!</p>
+            <p class="description">Para te ajudar a enviar mensagens secretas durante a guerra bruxa, utilizamos o encantamento confundus para codificar e descodificar o seu conteúdo. Não esqueça que somente chave correta ativa o encantamento para exibir o conteúdo original!</p>
         </div>
         <div>
             <label class="label" id="msg">Mensagem:</label><br>
             <textarea class="textBox" id="messageTextArea" style="resize: none" rows="4" placeholder="Digite a mensagem..."></textarea>
         </div>
         <div>
-            <label class="label" id="keyName">Chave:</label><br>
-            <input class="key" id="offsetKey" type="number" name="chave" placeholder="Nº">
+            <aside>
+                <label class="label" id="keyName">Chave:</label><br>
+                <input class="key" id="offsetKey" type="number" name="chave" placeholder="Nº">
+            </aside>
         </div>
         <div>
             <button class="buttons" id="cipherButton" type="button">Codificar</button>
@@ -30,7 +33,7 @@
         </div>
         <div>
             <label class="label">Confundus:</label>
-            <textarea class="textBox" id="finalMsg" style="resize: none" rows="4" placeholder="Resultado da mensagem com encantamento..."></textarea>
+            <textarea disabled class="textBox" id="finalMsg" style="resize: none" rows="4" placeholder="Resultado da mensagem com encantamento..."></textarea>
         </div>
     </main>
     <footer class="footer">©CarolineCosta</footer>
