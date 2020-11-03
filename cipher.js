@@ -1,8 +1,8 @@
 const cipher = {
 
     encode: function(offset, string) {
-        const firstAsciiUpper = 65
-        const firstAsciiLower = 97
+        const lastAsciiUpper = 65
+        const lastAsciiLower = 97
         const alphabetLength = 26
         let cipherMessage = ""
 
@@ -11,21 +11,21 @@ const cipher = {
             const messageCharCode = Number(string[i].charCodeAt())
             let charDecode = ""
             if ((messageCharCode >= 65) && (messageCharCode <= 90)) {
-                charDecode = ((messageCharCode - firstAsciiUpper + offset) % alphabetLength) + firstAsciiUpper
+                charDecode = ((messageCharCode - lastAsciiUpper + offset) % alphabetLength) + lastAsciiUpper
             } else if ((messageCharCode >= 97) && (messageCharCode <= 122)) {
-                charDecode = ((messageCharCode - firstAsciiLower + offset) % alphabetLength) + firstAsciiLower
+                charDecode = ((messageCharCode - lastAsciiLower + offset) % alphabetLength) + lastAsciiLower
             } else {
                 charDecode = messageCharCode
             }
-            cipherMessage = cipherMessage + String.fromCharCode(charDecode)
+            cipherMessage += String.fromCharCode(charDecode)
         }
 
         return cipherMessage
     },
 
     decode: function(offset, string) {
-        const firstAsciiUpper = 65
-        const firstAsciiLower = 97
+        const lastAsciiUpper = 90
+        const lastAsciiLower = 122
         const alphabetLength = 26
         let cipherMessage = ""
 
@@ -34,13 +34,13 @@ const cipher = {
             const messageCharCode = Number(string[i].charCodeAt())
             let charDecode = ""
             if ((messageCharCode >= 65) && (messageCharCode <= 90)) {
-                charDecode = ((messageCharCode - firstAsciiUpper - offset) % alphabetLength) + firstAsciiUpper
+                charDecode = ((messageCharCode - lastAsciiUpper - offset) % alphabetLength) + lastAsciiUpper
             } else if ((messageCharCode >= 97) && (messageCharCode <= 122)) {
-                charDecode = ((messageCharCode - firstAsciiLower - offset) % alphabetLength) + firstAsciiLower
+                charDecode = ((messageCharCode - lastAsciiLower - offset) % alphabetLength) + lastAsciiLower
             } else {
                 charDecode = messageCharCode
             }
-            cipherMessage = cipherMessage + String.fromCharCode(charDecode)
+            cipherMessage += String.fromCharCode(charDecode)
         }
 
         return cipherMessage
