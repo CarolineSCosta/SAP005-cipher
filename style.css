@@ -1,106 +1,117 @@
-    .body {
-        background-color: #08030a;
-        background-image: url(imagem1.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        font-family: 'Syne Mono', monospace;
-        line-height: 1.5;
-    }
-    
-    .title {
-        font-size: 45px;
-        color: rgb(232, 224, 253);
-        text-align: center;
-        margin-left: 46%;
-        margin-top: 0%;
-        margin-bottom: 1%;
-    }
-    
-    .main {
-        font-size: 15px;
-        color: rgb(232, 224, 253);
-        background-color: #231a3e52;
-        margin-left: 55%;
-        margin-bottom: 1%;
-        border-radius: 3px;
-        border: solid 2px #4f4470;
-        padding: 15px;
-        width: 33%;
-        box-shadow: 3px 3px 6px #542370;
-    }
-    
-    .description {
-        text-align: justify;
-        margin-top: 1%;
-        margin-bottom: 2.5%;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    
-    .label {
-        padding: 15px;
-    }
-    
-    .textBox {
-        font-family: 'Syne Mono', monospace;
-        padding: 1.5em 1.2em;
-        margin: 15px;
-        width: 431px;
-        height: 30px;
-        background-color: #231a3e00;
-        color: rgb(232, 224, 253);
-        border-radius: 3px;
-        border: solid 1px #4f4470;
-    }
-    
-    .textBox:hover {
-        border: solid 1px #8673BD;
-        background-color: #231a3e80;
-    }
-    
-    .key {
-        font-family: 'Syne Mono', monospace;
-        display: block;
-        justify-content: center;
-        padding: 1em 1.2em;
-        width: 431px;
-        margin: 15px;
-        height: 10px;
-        background-color: #231a3e00;
-        color: rgb(232, 224, 253);
-        border-radius: 3px;
-        border: solid 1px #4f4470;
-    }
-    
-    .key:hover {
-        border: solid 1px #8673BD;
-        background-color: #231a3e80;
-    }
-    
-    .buttons {
-        display: inline-block;
-        margin: 15px;
-        border: solid 1px #8673BD;
-        background-color: #362370;
-        color: rgb(232, 224, 253);
-        padding: 0.5em 1.75em;
-        font-family: 'Syne Mono', monospace;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-    
-    .buttons:hover {
-        border: solid 1px #8673BD;
-        background-color: #362370;
-        color: #A273BD;
-    }
-    
-    .footer {
-        text-align: center;
-        margin-left: 46%;
-        margin-top: 20px;
-        color: rgb(232, 224, 253);
-        font-size: 18px;
-    }
+        .body {
+            background-color: #08030a;
+            background-image: url(imagem1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            font-family: 'Syne Mono', monospace;
+            line-height: 1.5;
+        }
+        
+        .title {
+            font-size: 45px;
+            color: rgb(232, 224, 253);
+            text-align: center;
+            margin-left: 46%;
+            margin-top: 0%;
+            margin-bottom: 1%;
+        }
+        
+        .main {
+            font-size: 15px;
+            color: rgb(232, 224, 253);
+            background-color: #231a3e52;
+            margin-left: 55%;
+            margin-bottom: 1%;
+            border-radius: 3px;
+            border: solid 2px #4f4470;
+            padding: 15px;
+            width: 33%;
+            box-shadow: 3px 3px 6px #542370;
+        }
+        
+        .description {
+            text-align: justify;
+            margin-top: 1%;
+            margin-bottom: 2.5%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        
+        .label {
+            padding: 15px;
+        }
+        
+        .textBox {
+            font-family: 'Syne Mono', monospace;
+            padding: 1.5em 1.2em;
+            margin: 15px;
+            width: 431px;
+            height: 30px;
+            background-color: #231a3e00;
+            color: rgb(232, 224, 253);
+            border-radius: 3px;
+            border: solid 1px #4f4470;
+        }
+        
+        .textBox:hover {
+            border: solid 1px #8673BD;
+            background-color: #231a3e80;
+        }
+        
+        .key {
+            font-family: 'Syne Mono', monospace;
+            display: block;
+            justify-content: center;
+            padding: 1em 1.2em;
+            width: 431px;
+            margin: 15px;
+            height: 10px;
+            background-color: #231a3e00;
+            color: rgb(232, 224, 253);
+            border-radius: 3px;
+            border: solid 1px #4f4470;
+        }
+        
+        .key:hover {
+            border: solid 1px #8673BD;
+            background-color: #231a3e80;
+        }
+        
+        .buttons {
+            display: inline-block;
+            margin: 15px;
+            border: solid 1px #8673BD;
+            background-color: #362370;
+            color: rgb(232, 224, 253);
+            padding: 0.5em 1.75em;
+            font-family: 'Syne Mono', monospace;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .buttons:hover {
+            border: solid 1px #8673BD;
+            background-color: #362370;
+            color: #A273BD;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-left: 46%;
+            margin-top: 20px;
+        }
+        
+        a {
+            color: rgb(232, 224, 253);
+            font-size: 18px;
+        }
+        
+        a:hover {
+            color: #A273BD
+        }
+        
+        a:active {
+            color: #8673BD;
+        }
