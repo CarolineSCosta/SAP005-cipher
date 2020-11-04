@@ -22,7 +22,7 @@
         </div>
         <div>
             <label class="label" id="keyName">Chave:</label><br>
-            <input class="key" id="offsetKey" type="number" name="chave" placeholder="Nº">
+            <input class="key" id="offsetKey" type="number" name="chave" min="1" placeholder="Nº">
         </div>
         <div>
             <button class="buttons" id="cipherButton" type="button">Codificar</button>
@@ -34,7 +34,9 @@
             <textarea disabled class="textBox" id="finalMsg" style="resize: none" rows="4" placeholder="Resultado da mensagem com encantamento..."></textarea>
         </div>
     </main>
-    <footer class="footer">©CarolineCosta</footer>
+    <footer class="footer">
+        <a href="https://github.com/CarolineSCosta" target="_blank">©CarolineCosta</a>
+    </footer>
     <script src="index.js" type="module">
     </script>
 </body>
