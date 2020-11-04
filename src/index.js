@@ -1,7 +1,5 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
-
 const textArea = window.document.querySelector('#messageTextArea')
 const numberInput = window.document.querySelector('#offsetKey')
 const decipherButton = window.document.querySelector('#decipherButton')
