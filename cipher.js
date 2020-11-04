@@ -6,18 +6,22 @@ const cipher = {
         const alphabetLength = 26
         let cipherMessage = ""
 
+        if (!offset || offset == null || string == null || string == "") {
+            throw new TypeError();
+        } else {
 
-        for (let i = 0; i < string.length; i++) {
-            const messageCharCode = Number(string[i].charCodeAt())
-            let charDecode = ""
-            if ((messageCharCode >= 65) && (messageCharCode <= 90)) {
-                charDecode = ((messageCharCode - lastAsciiUpper + offset) % alphabetLength) + lastAsciiUpper
-            } else if ((messageCharCode >= 97) && (messageCharCode <= 122)) {
-                charDecode = ((messageCharCode - lastAsciiLower + offset) % alphabetLength) + lastAsciiLower
-            } else {
-                charDecode = messageCharCode
+            for (let i = 0; i < string.length; i++) {
+                const messageCharCode = Number(string[i].charCodeAt())
+                let charDecode = ""
+                if ((messageCharCode >= 65) && (messageCharCode <= 90)) {
+                    charDecode = ((messageCharCode - lastAsciiUpper + offset) % alphabetLength) + lastAsciiUpper
+                } else if ((messageCharCode >= 97) && (messageCharCode <= 122)) {
+                    charDecode = ((messageCharCode - lastAsciiLower + offset) % alphabetLength) + lastAsciiLower
+                } else {
+                    charDecode = messageCharCode
+                }
+                cipherMessage += String.fromCharCode(charDecode)
             }
-            cipherMessage += String.fromCharCode(charDecode)
         }
 
         return cipherMessage
@@ -29,18 +33,21 @@ const cipher = {
         const alphabetLength = 26
         let cipherMessage = ""
 
-
-        for (let i = 0; i < string.length; i++) {
-            const messageCharCode = Number(string[i].charCodeAt())
-            let charDecode = ""
-            if ((messageCharCode >= 65) && (messageCharCode <= 90)) {
-                charDecode = ((messageCharCode - lastAsciiUpper - offset) % alphabetLength) + lastAsciiUpper
-            } else if ((messageCharCode >= 97) && (messageCharCode <= 122)) {
-                charDecode = ((messageCharCode - lastAsciiLower - offset) % alphabetLength) + lastAsciiLower
-            } else {
-                charDecode = messageCharCode
+        if (offset == "" || offset == null || string == null || string == "") {
+            throw new TypeError();
+        } else {
+            for (let i = 0; i < string.length; i++) {
+                const messageCharCode = Number(string[i].charCodeAt())
+                let charDecode = ""
+                if ((messageCharCode >= 65) && (messageCharCode <= 90)) {
+                    charDecode = ((messageCharCode - lastAsciiUpper - offset) % alphabetLength) + lastAsciiUpper
+                } else if ((messageCharCode >= 97) && (messageCharCode <= 122)) {
+                    charDecode = ((messageCharCode - lastAsciiLower - offset) % alphabetLength) + lastAsciiLower
+                } else {
+                    charDecode = messageCharCode
+                }
+                cipherMessage += String.fromCharCode(charDecode)
             }
-            cipherMessage += String.fromCharCode(charDecode)
         }
 
         return cipherMessage
