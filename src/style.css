@@ -1,6 +1,6 @@
         .body {
             background-color: #08030a;
-            background-image: url(imagem1.png);
+            background-image: url(background-image.png);
             background-size: contain;
             background-repeat: no-repeat;
             font-family: 'Syne Mono', monospace;
@@ -9,7 +9,7 @@
         
         .title {
             font-size: 45px;
-            color: rgb(232, 224, 253);
+            color: rgb(212, 199, 245);
             text-align: center;
             margin-left: 46%;
             margin-top: 0%;
@@ -18,7 +18,7 @@
         
         .main {
             font-size: 15px;
-            color: rgb(232, 224, 253);
+            color: rgb(212, 199, 245);
             background-color: #231a3e52;
             margin-left: 55%;
             margin-bottom: 1%;
@@ -48,7 +48,7 @@
             width: 431px;
             height: 30px;
             background-color: #231a3e00;
-            color: rgb(232, 224, 253);
+            color: rgb(212, 199, 245);
             border-radius: 3px;
             border: solid 1px #4f4470;
         }
@@ -67,7 +67,7 @@
             margin: 15px;
             height: 10px;
             background-color: #231a3e00;
-            color: rgb(232, 224, 253);
+            color: rgb(212, 199, 245);
             border-radius: 3px;
             border: solid 1px #4f4470;
         }
@@ -82,7 +82,7 @@
             margin: 15px;
             border: solid 1px #8673BD;
             background-color: #362370;
-            color: rgb(232, 224, 253);
+            color: rgb(212, 199, 245);
             padding: 0.5em 1.75em;
             font-family: 'Syne Mono', monospace;
             font-size: 15px;
@@ -103,15 +103,15 @@
             margin-top: 20px;
         }
         
-        a {
-            color: rgb(232, 224, 253);
+        .link {
+            color: rgb(212, 199, 245);
             font-size: 18px;
         }
         
-        a:hover {
+        .link:hover {
             color: #A273BD
         }
         
-        a:active {
+        .link:active {
             color: #8673BD;
         }
