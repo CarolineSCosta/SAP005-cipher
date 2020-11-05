@@ -61,7 +61,14 @@ Desenvolvido para enviar mensagens secretas!
  📌Interface
 
  O principal objetivo foi desenvolver uma interface em que fossem exibidas apenas as funcionalidades necessárias de forma simples e amigável ao usuário.
+
+ * Wireframe inicial
+
 ![Wireframe inicial](src/files/wireframe.png)
+
+* Interface final
+
+![Interface final](src/files/interface-confundus.png)
  
  📌Palheta de cores
 
