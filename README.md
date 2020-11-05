@@ -25,16 +25,16 @@ Desenvolvido para enviar mensagens secretas!
 
 📌Codificar:
 
-*Digite a mensagem
-*Digite o número da chave de deslocamento
-*Clique no botão codificar
-*Copie a mensagem e faça bom uso!
+* Digite a mensagem
+* Digite o número da chave de deslocamento
+* Clique no botão codificar
+* Copie a mensagem e faça bom uso!
 
 📌Decodificar:
-*Digite a mensagem já codificada
-*Digite o número da chave de deslocamento utilizado para codificar
-*Clique no botão decodificar
-*A mensagem original será exibida!
+* Digite a mensagem já codificada
+* Digite o número da chave de deslocamento utilizado para codificar
+* Clique no botão decodificar
+* A mensagem original será exibida!
 
 
 ## 3. Tema
@@ -72,6 +72,6 @@ Desenvolvido para enviar mensagens secretas!
 
  📌Para esse projeto foram usados:
 
-*CSS
-*HTML
-*Vanilla JavaScript
+* CSS
+* HTML
+* Vanilla JavaScript
