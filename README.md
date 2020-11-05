@@ -42,7 +42,7 @@ Desenvolvido para enviar mensagens secretas!
  Confundus é um encantamento que confunde e altera o alvo.
  Funciona em coisas vivas e inanimadas. Existem vários graus de confusão que podem ser causados ​​por ele indo do desconhecimento da situação atual, esquecendo informações importantes ou tornando-se particularmente impressionáveis.
 
-## 4.Identificação do usuário
+## 4. Identificação do usuário
 
  Destinado a bruxos que querem se comunicar através de mensagens durante a guerra bruxa sem que sejam descobertos.
 
@@ -72,10 +72,10 @@ Desenvolvido para enviar mensagens secretas!
 
 ![Interface final](src/files/interface-confundus.png)
  
- 📌 Palheta de cores
+ 📌 Paleta de cores
 
- Depois de selecionar o background que estivesse de acordo com o tema, foi desenvolvida uma palheta de cores para criar uma harmonia visual.
- ![Palheta de cores](src/files/paleta-de-cores.png)
+ Depois de selecionar o background que estivesse de acordo com o tema, foi desenvolvida uma paleta de cores para criar uma harmonia visual.
+ ![Paleta de cores](src/files/paleta-de-cores.png)
 
  ## 6. Desenvolvimento
 
