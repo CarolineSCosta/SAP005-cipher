@@ -21,7 +21,7 @@ Desenvolvido para enviar mensagens secretas!
 
 ## 2. Como utilizar
 
-✨ Pata acessar a aplicação [Clique aqui!](https://carolinescosta.github.io/SAP005-cipher/index.html) ✨
+✨ Para acessar a aplicação [Clique aqui!](https://carolinescosta.github.io/SAP005-cipher/index.html) ✨
 
 📌 Codificar:
 
