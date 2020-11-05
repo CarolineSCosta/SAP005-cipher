@@ -21,16 +21,16 @@ Desenvolvido para enviar mensagens secretas!
 
 ## 2. Como utilizar
 
-✨Acesse o site✨
+✨ Pata acessar a aplicação [Clique aqui!](https://carolinescosta.github.io/SAP005-cipher/index.html) ✨
 
-📌Codificar:
+📌 Codificar:
 
 * Digite a mensagem
 * Digite o número da chave de deslocamento
 * Clique no botão codificar
 * Copie a mensagem e faça bom uso!
 
-📌Decodificar:
+📌 Decodificar:
 * Digite a mensagem já codificada
 * Digite o número da chave de deslocamento utilizado para codificar
 * Clique no botão decodificar
@@ -48,17 +48,19 @@ Desenvolvido para enviar mensagens secretas!
 
 ## 5. Processo
 
- 📌Organização
+ 📌 Organização
 
  Toda a organização das tarefas e processos foram realizadas utlizando o modelo de Kanban.
+
  ![Print da tela do Notion](src/files/notion.png)
 
- 📌Fluxograma
+ 📌 Fluxograma
 
  Foi feito um fluxograma pensando na experiência do usuário e para melhor entendimento dos processos da aplicação.
+
  ![Fluxograma](src/files/fluxograma.png)
 
- 📌Interface
+ 📌 Interface
 
  O principal objetivo foi desenvolver uma interface em que fossem exibidas apenas as funcionalidades necessárias de forma simples e amigável ao usuário.
 
@@ -70,14 +72,14 @@ Desenvolvido para enviar mensagens secretas!
 
 ![Interface final](src/files/interface-confundus.png)
  
- 📌Palheta de cores
+ 📌 Palheta de cores
 
  Depois de selecionar o background que estivesse de acordo com o tema, foi desenvolvida uma palheta de cores para criar uma harmonia visual.
  ![Palheta de cores](src/files/paleta-de-cores.png)
 
  ## 6. Desenvolvimento
 
- 📌Para esse projeto foram usados:
+ 📌 Para esse projeto foram usados:
 
 * CSS
 * HTML
