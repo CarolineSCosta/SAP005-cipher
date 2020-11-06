@@ -32,6 +32,19 @@ describe('cipher', () => {
         it('should return " !@" for " !@"', () => {
             expect(cipher.encode(33, ' !@')).toBe(' !@');
         });
+
+        it('should return "XYZABCDEFGHIJKLMNOPQRSTUVW" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset -55', () => {
+            expect(cipher.encode(-55, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('XYZABCDEFGHIJKLMNOPQRSTUVW');
+        });
+
+        it('should return "xyzabcdefghijklmnopqrstuvw" for "abcdefghijklmnopqrstuvwxyz" with offset -55', () => {
+            expect(cipher.encode(-55, 'abcdefghijklmnopqrstuvwxyz')).toBe('xyzabcdefghijklmnopqrstuvw');
+        });
+
+        it('should return " !@" for " !@"', () => {
+            expect(cipher.encode(-33, ' !@')).toBe(' !@');
+        });
+
     });
 
     describe('cipher.decode', () => {
@@ -57,6 +70,18 @@ describe('cipher', () => {
 
         it('should return " !@" para " !@"', () => {
             expect(cipher.decode(33, ' !@')).toBe(' !@');
+        });
+
+        it('should return "DEFGHIJKLMNOPQRSTUVWXYZABC" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset -55', () => {
+            expect(cipher.decode(-55, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('DEFGHIJKLMNOPQRSTUVWXYZABC');
+        });
+
+        it('should return "defghijklmnopqrstuvwxyzabc" for "abcdefghijklmnopqrstuvwxyz" with offset -55', () => {
+            expect(cipher.decode(-55, 'abcdefghijklmnopqrstuvwxyz')).toBe('defghijklmnopqrstuvwxyzabc');
+        });
+
+        it('should return " !@" para " !@"', () => {
+            expect(cipher.decode(-33, ' !@')).toBe(' !@');
         });
     });
 

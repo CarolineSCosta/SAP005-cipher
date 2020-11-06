@@ -11,7 +11,6 @@ Desenvolvido para enviar mensagens secretas!
 * [4. Identificação do usuário](#4-identificação-do-usuário)
 * [5. Processo de criação](#5-processo-de-criação)
 * [6. Desenvolvimento](#6-desenvolvimento)
-* [7. Setup](#7-setup)
 
 
 ***
@@ -53,7 +52,7 @@ Desenvolvido para enviar mensagens secretas!
 
  Toda a organização das tarefas e processos foram realizadas utilizando o modelo de Kanban.
 
- Ao iniciar o projeto começo estruturando o meu HTML, inserindo todos os elementos e atribuindo ID/Class que vão ser utilizados na aplicação. Feito isso começo a desenvolver o JavaScript para dar comportamento e funcionalidade. Apesar de definir no inicio como será a interface, prefiro deixar o CSS pro final quando tudo já está funcionando.
+ Ao iniciar o projeto comecei estruturando o HTML, inseri todos os elementos e atribui ID/Class. Feito isso comecei a desenvolver o JavaScript para dar comportamento e funcionalidade. Apesar de definir no início como seria a interface, optei por deixar o CSS para o final quando tudo já estivesse funcionando.
 
  ![Print da tela do Notion](src/files/notion.png)
 
