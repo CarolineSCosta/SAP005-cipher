@@ -11,6 +11,7 @@ Desenvolvido para enviar mensagens secretas!
 * [4. Identificação do usuário](#4-identificação-do-usuário)
 * [5. Processo de criação](#5-processo-de-criação)
 * [6. Desenvolvimento](#6-desenvolvimento)
+* [7. Setup](#7-setup)
 
 
 ***
@@ -40,7 +41,7 @@ Desenvolvido para enviar mensagens secretas!
 ## 3. Tema
 
  Confundus é um encantamento que confunde e altera o alvo.
- Funciona em coisas vivas e inanimadas. Existem vários graus de confusão que podem ser causados ​​por ele indo do desconhecimento da situação atual, esquecendo informações importantes ou tornando-se particularmente impressionáveis.
+ Funciona em coisas vivas e inanimadas. Existem vários graus de confusão que podem ser causados, indo do desconhecimento da situação atual, esquecendo informações importantes ou tornando-se particularmente impressionáveis.
 
 ## 4. Identificação do usuário
 
@@ -48,9 +49,11 @@ Desenvolvido para enviar mensagens secretas!
 
 ## 5. Processo
 
- 📌 Organização
+ 📌 Organização 
 
- Toda a organização das tarefas e processos foram realizadas utlizando o modelo de Kanban.
+ Toda a organização das tarefas e processos foram realizadas utilizando o modelo de Kanban.
+
+ Ao iniciar o projeto começo estruturando o meu HTML, inserindo todos os elementos e atribuindo ID/Class que vão ser utilizados na aplicação. Feito isso começo a desenvolver o JavaScript para dar comportamento e funcionalidade. Apesar de definir no inicio como será a interface, prefiro deixar o CSS pro final quando tudo já está funcionando.
 
  ![Print da tela do Notion](src/files/notion.png)
 
@@ -81,6 +84,6 @@ Desenvolvido para enviar mensagens secretas!
 
  📌 Para esse projeto foram usados:
 
-* CSS
 * HTML
 * Vanilla JavaScript
+* CSS
