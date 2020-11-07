@@ -39,6 +39,7 @@ Desenvolvido para enviar mensagens secretas!
 📌 Caracteres aceitos:
 
 * Números
+* Espaços
 * Letras maiúsculas
 * Letras minúsculas
 * Caracteres especiais (", ?, !, ^, ´, ~, etc.)
@@ -95,6 +96,6 @@ Desenvolvido para enviar mensagens secretas!
 
  📌 Para esse projeto foram usados:
 
-* CSS3
 * HTML5
+* CSS3
 * Vanilla JavaScript
