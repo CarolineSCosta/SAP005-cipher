@@ -36,6 +36,18 @@ Desenvolvido para enviar mensagens secretas!
 * Clique no botão decodificar
 * A mensagem original será exibida!
 
+📌 Caracteres aceitos:
+
+* Números
+* Letras maiúsculas
+* Letras minúsculas
+* Caracteres especiais (", ?, !, ^, ´, ~, etc.)
+
+📌Chaves aceitas:
+
+* Números positivos
+* Números negativos
+
 
 ## 3. Tema
 
@@ -83,6 +95,6 @@ Desenvolvido para enviar mensagens secretas!
 
  📌 Para esse projeto foram usados:
 
-* HTML
+* CSS3
+* HTML5
 * Vanilla JavaScript
-* CSS

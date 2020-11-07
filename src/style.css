@@ -45,6 +45,8 @@
             font-family: 'Syne Mono', monospace;
             padding: 1.5em 1.2em;
             margin: 15px;
+            margin-top: 1.7%;
+            margin-bottom: 1.7%;
             width: 87%;
             background-color: #231a3e00;
             color: rgb(212, 199, 245);
@@ -61,6 +63,8 @@
             font-family: 'Syne Mono', monospace;
             display: block;
             margin: 15px;
+            margin-top: 1.7%;
+            margin-bottom: 1.7%;
             justify-content: center;
             padding: 0.7em 1.2em;
             width: 431px;
@@ -79,10 +83,14 @@
         .buttons {
             display: inline-block;
             margin: 15px;
+            margin-left: 5%;
+            margin-top: 1.7%;
+            margin-bottom: 1.7%;
             border: solid 1px #4f4470;
             background-color: #362370;
-            color: rgb(212, 199, 245);
-            padding: 0.5em 1.85em;
+            color: rgb(212, 196, 245);
+            width: 40%;
+            padding: 0.4em;
             font-family: 'Syne Mono', monospace;
             font-size: 15px;
             font-weight: bold;
