@@ -14,28 +14,28 @@
         <h1 class="title">CONFUNDUS.</h1>
     </header>
     <main class="main">
-        <div>
+        <header>
             <p class="description">Para enviar mensagens secretas durante a guerra bruxa, utilizamos o encantamento confundus para codificar e descodificar o seu conteúdo. Não esqueça que somente chave correta ativa o encantamento para exibir o conteúdo original!</p>
-        </div>
+        </header>
         <div>
             <label class="label" id="msg">Mensagem:</label><br>
-            <textarea class="textBox" id="messageTextArea" style="resize: none" rows="2" placeholder="Digite a mensagem..."></textarea>
+            <textarea class="textBox" id="original-msg-text-area" style="resize: none" rows="2" placeholder="Digite a mensagem..."></textarea>
         </div>
         <div>
-            <label class="label" id="keyName">Chave:</label><br>
-            <input class="key" id="offsetKey" type="number" name="chave" placeholder="Nº">
+            <label class="label" id="key-name">Chave:</label><br>
+            <input class="key" id="offset-key-input-number" type="number" placeholder="Nº">
         </div>
         <div>
-            <button class="buttons" id="cipherButton" type="button">Codificar</button>
-            <button class="buttons" id="decipherButton" type="button">Decodificar</button>
+            <button class="buttons" id="cipher-button" type="button">Codificar</button>
+            <button class="buttons" id="decipher-button" type="button">Decodificar</button>
         </div>
         <div>
             <label class="label">Confundus:</label>
-            <textarea disabled class="textBox" id="finalMsg" style="resize: none" rows="2" placeholder="Resultado da mensagem com encantamento..."></textarea>
+            <textarea disabled class="text-box" id="result-msg-text-area" style="resize: none" rows="2" placeholder="Resultado da mensagem com encantamento..."></textarea>
         </div>
         <div>
-            <button class="buttons" id="copyButton" type="button">Copiar</button>
-            <button class="buttons" id="clearButton" type="button">Limpar</button>
+            <button class="buttons" id="copy-button" type="button">Copiar</button>
+            <button class="buttons" id="clear-button" type="button">Limpar</button>
         </div>
     </main>
     <footer class="footer">

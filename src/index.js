@@ -1,39 +1,39 @@
 import cipher from './cipher.js';
 
-const textArea = window.document.querySelector('#messageTextArea')
-const numberInput = window.document.querySelector('#offsetKey')
-const cipherButton = window.document.querySelector('#cipherButton')
-const decipherButton = window.document.querySelector('#decipherButton')
-const copyButton = window.document.querySelector('#copyButton')
-const clearButton = window.document.querySelector("#clearButton")
-const resultMsg = window.document.querySelector('#finalMsg')
+const ORIGINAL_MSG_TEXT_AREA = document.querySelector('#original-msg-text-area')
+const OFFSET_KEY_INPUT_NUMBER = document.querySelector('#offset-key-input-number')
+const CIPHER_BUTTON = document.querySelector('#cipher-button')
+const DECIPHER_BUTTON = document.querySelector('#decipher-button')
+const COPY_BUTTON = document.querySelector('#copy-button')
+const CLEAR_BUTTON = document.querySelector("#clear-button")
+const RESULT_MSG_TEXT_AREA = document.querySelector('#result-msg-text-area')
 
-cipherButton.addEventListener('click', () => {
-    const originalMessage = textArea.value
-    const offset = Number(numberInput.value)
-    const cipherMessage = cipher.encode(offset, originalMessage)
-    resultMsg.value = cipherMessage
+CIPHER_BUTTON.addEventListener('click', () => {
+    const ORIGINAL_MESSAGE = ORIGINAL_MSG_TEXT_AREA.value
+    const OFFSET = Number(OFFSET_KEY_INPUT_NUMBER.value)
+    const CIPHER_MESSAGE = cipher.encode(OFFSET, ORIGINAL_MESSAGE)
+    RESULT_MSG_TEXT_AREA.value = CIPHER_MESSAGE
 })
 
-decipherButton.addEventListener('click', () => {
-    const originalMessage = textArea.value
-    const offset = Number(numberInput.value)
-    const decipherMessage = cipher.decode(offset, originalMessage)
-    resultMsg.value = decipherMessage
+DECIPHER_BUTTON.addEventListener('click', () => {
+    const ORIGINAL_MESSAGE = ORIGINAL_MSG_TEXT_AREA.value
+    const OFFSET = Number(numberInput.value)
+    const DECIPHER_MESSAGE = cipher.decode(OFFSET, ORIGINAL_MESSAGE)
+    RESULT_MSG_TEXT_AREA.value = DECIPHER_MESSAGE
 })
 
-copyButton.addEventListener("click", () => {
-    resultMsg.removeAttribute("disabled")
-    resultMsg.select()
+COPY_BUTTON.addEventListener("click", () => {
+    RESULT_MSG_TEXT_AREA.removeAttribute("disabled")
+    RESULT_MSG_TEXT_AREA.select()
     document.execCommand("copy")
-    copyButton.innerHTML = "Copiado";
-    resultMsg.setAttribute("disabled", true)
+    COPY_BUTTON.innerHTML = "Copiado"
+    RESULT_MSG_TEXT_AREA.setAttribute("disabled", true)
 })
 
-clearButton.addEventListener("click", () => {
-    textArea.value = ""
-    numberInput.value = ""
-    resultMsg.value = ""
-    copyButton.innerHTML = "Copiar";
+CLEAR_BUTTON.addEventListener("click", () => {
+    ORIGINAL_MSG_TEXT_AREA.value = ""
+    OFFSET_KEY_INPUT_NUMBER.value = ""
+    RESULT_MSG_TEXT_AREA.value = ""
+    COPY_BUTTON.innerHTML = "Copiar"
 
 })
