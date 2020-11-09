@@ -11,15 +11,25 @@ const RESULT_MSG_TEXT_AREA = document.querySelector('#result-msg-text-area')
 CIPHER_BUTTON.addEventListener('click', () => {
     const ORIGINAL_MESSAGE = ORIGINAL_MSG_TEXT_AREA.value
     const OFFSET = Number(OFFSET_KEY_INPUT_NUMBER.value)
-    const CIPHER_MESSAGE = cipher.encode(OFFSET, ORIGINAL_MESSAGE)
-    RESULT_MSG_TEXT_AREA.value = CIPHER_MESSAGE
+    let cipherMessage = ""
+    if (OFFSET >= 0) {
+        cipherMessage = cipher.encode(OFFSET, ORIGINAL_MESSAGE)
+    } else {
+        cipherMessage = cipher.decode(-OFFSET, ORIGINAL_MESSAGE)
+    }
+    RESULT_MSG_TEXT_AREA.value = cipherMessage
 })
 
 DECIPHER_BUTTON.addEventListener('click', () => {
     const ORIGINAL_MESSAGE = ORIGINAL_MSG_TEXT_AREA.value
-    const OFFSET = Number(numberInput.value)
-    const DECIPHER_MESSAGE = cipher.decode(OFFSET, ORIGINAL_MESSAGE)
-    RESULT_MSG_TEXT_AREA.value = DECIPHER_MESSAGE
+    const OFFSET = Number(OFFSET_KEY_INPUT_NUMBER.value)
+    let decipherMessage = ""
+    if (OFFSET >= 0) {
+        decipherMessage = cipher.decode(OFFSET, ORIGINAL_MESSAGE)
+    } else {
+        decipherMessage = cipher.encode(-OFFSET, ORIGINAL_MESSAGE)
+    }
+    RESULT_MSG_TEXT_AREA.value = decipherMessage
 })
 
 COPY_BUTTON.addEventListener("click", () => {

@@ -41,7 +41,7 @@
             padding: 15px;
         }
         
-        .textBox {
+        .text-box {
             font-family: 'Syne Mono', monospace;
             padding: 1.5em 1.2em;
             margin: 15px;
@@ -54,7 +54,7 @@
             border: solid 1px #4f4470;
         }
         
-        .textBox:hover {
+        .text-box:hover {
             border: solid 1px #8673BD;
             background-color: #231a3e80;
         }
