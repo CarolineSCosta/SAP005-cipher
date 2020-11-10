@@ -38,8 +38,8 @@ Desenvolvido para enviar mensagens secretas!
 
 📌 Caracteres aceitos:
 
-* Números
 * Espaços
+* Números
 * Letras maiúsculas
 * Letras minúsculas
 * Caracteres especiais (", ?, !, ^, ´, ~, etc.)
@@ -59,7 +59,7 @@ Desenvolvido para enviar mensagens secretas!
 
  Destinado a bruxos que querem se comunicar através de mensagens durante a guerra bruxa sem que sejam descobertos.
 
-## 5. 5. Processo de criação
+## 5. Processo de criação
 
  📌 Organização 
 
