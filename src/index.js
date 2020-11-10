@@ -1,49 +1,49 @@
 import cipher from './cipher.js';
 
-const ORIGINAL_MSG_TEXT_AREA = document.querySelector('#original-msg-text-area')
-const OFFSET_KEY_INPUT_NUMBER = document.querySelector('#offset-key-input-number')
-const CIPHER_BUTTON = document.querySelector('#cipher-button')
-const DECIPHER_BUTTON = document.querySelector('#decipher-button')
-const COPY_BUTTON = document.querySelector('#copy-button')
-const CLEAR_BUTTON = document.querySelector("#clear-button")
-const RESULT_MSG_TEXT_AREA = document.querySelector('#result-msg-text-area')
+const originalMsgTextArea = document.querySelector('#original-msg-text-area')
+const offsetKeyInputNumber = document.querySelector('#offset-key-input-number')
+const cipherButton = document.querySelector('#cipher-button')
+const decipherButton = document.querySelector('#decipher-button')
+const copyButton = document.querySelector('#copy-button')
+const clearButton = document.querySelector('#clear-button')
+const resultMsgTextArea = document.querySelector('#result-msg-text-area')
 
-CIPHER_BUTTON.addEventListener('click', () => {
-    const ORIGINAL_MESSAGE = ORIGINAL_MSG_TEXT_AREA.value
-    const OFFSET = Number(OFFSET_KEY_INPUT_NUMBER.value)
+cipherButton.addEventListener('click', () => {
+    const originalMessage = originalMsgTextArea.value
+    const offset = Number(offsetKeyInputNumber.value)
     let cipherMessage = ""
-    if (OFFSET >= 0) {
-        cipherMessage = cipher.encode(OFFSET, ORIGINAL_MESSAGE)
+    if (offset >= 0) {
+        cipherMessage = cipher.encode(offset, originalMessage)
     } else {
-        cipherMessage = cipher.decode(-OFFSET, ORIGINAL_MESSAGE)
+        cipherMessage = cipher.decode(-offset, originalMessage)
     }
-    RESULT_MSG_TEXT_AREA.value = cipherMessage
+    resultMsgTextArea.value = cipherMessage
 })
 
-DECIPHER_BUTTON.addEventListener('click', () => {
-    const ORIGINAL_MESSAGE = ORIGINAL_MSG_TEXT_AREA.value
-    const OFFSET = Number(OFFSET_KEY_INPUT_NUMBER.value)
+decipherButton.addEventListener('click', () => {
+    const originalMessage = originalMsgTextArea.value
+    const offset = Number(offsetKeyInputNumber.value)
     let decipherMessage = ""
-    if (OFFSET >= 0) {
-        decipherMessage = cipher.decode(OFFSET, ORIGINAL_MESSAGE)
+    if (offset >= 0) {
+        decipherMessage = cipher.decode(offset, originalMessage)
     } else {
-        decipherMessage = cipher.encode(-OFFSET, ORIGINAL_MESSAGE)
+        decipherMessage = cipher.encode(-offset, originalMessage)
     }
-    RESULT_MSG_TEXT_AREA.value = decipherMessage
+    resultMsgTextArea.value = decipherMessage
 })
 
-COPY_BUTTON.addEventListener("click", () => {
-    RESULT_MSG_TEXT_AREA.removeAttribute("disabled")
-    RESULT_MSG_TEXT_AREA.select()
+copyButton.addEventListener("click", () => {
+    resultMsgTextArea.removeAttribute("disabled")
+    resultMsgTextArea.select()
     document.execCommand("copy")
-    COPY_BUTTON.innerHTML = "Copiado"
-    RESULT_MSG_TEXT_AREA.setAttribute("disabled", true)
+    copyButton.innerHTML = "Copiado"
+    resultMsgTextArea.setAttribute("disabled", true)
 })
 
-CLEAR_BUTTON.addEventListener("click", () => {
-    ORIGINAL_MSG_TEXT_AREA.value = ""
-    OFFSET_KEY_INPUT_NUMBER.value = ""
-    RESULT_MSG_TEXT_AREA.value = ""
-    COPY_BUTTON.innerHTML = "Copiar"
+clearButton.addEventListener("click", () => {
+    originalMsgTextArea.value = ""
+    offsetKeyInputNumber.value = ""
+    resultMsgTextArea.value = ""
+    copyButton.innerHTML = "Copiar"
 
 })

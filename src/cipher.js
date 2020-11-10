@@ -12,14 +12,14 @@ const cipher = {
             throw new TypeError('User must input an offset and string', 'cipher.js', 12)
         } else {
             for (let i = 0; i < string.length; i++) {
-                const MESSAGE_CHAR_CODE = Number(string[i].charCodeAt(0))
+                const messageCharCode = Number(string[i].charCodeAt(0))
                 let charDecode = ""
-                if ((MESSAGE_CHAR_CODE >= FIRST_ASCII_UPPER) && (MESSAGE_CHAR_CODE <= LAST_ASCII_UPPER)) {
-                    charDecode = ((MESSAGE_CHAR_CODE - FIRST_ASCII_UPPER + offset) % ALPHABET_LENGTH) + FIRST_ASCII_UPPER
-                } else if ((MESSAGE_CHAR_CODE >= FIRST_ASCII_LOWER) && (MESSAGE_CHAR_CODE <= LAST_ASCII_LOWER)) {
-                    charDecode = ((MESSAGE_CHAR_CODE - FIRST_ASCII_LOWER + offset) % ALPHABET_LENGTH) + FIRST_ASCII_LOWER
+                if ((messageCharCode >= FIRST_ASCII_UPPER) && (messageCharCode <= LAST_ASCII_UPPER)) {
+                    charDecode = ((messageCharCode - FIRST_ASCII_UPPER + offset) % ALPHABET_LENGTH) + FIRST_ASCII_UPPER
+                } else if ((messageCharCode >= FIRST_ASCII_LOWER) && (messageCharCode <= LAST_ASCII_LOWER)) {
+                    charDecode = ((messageCharCode - FIRST_ASCII_LOWER + offset) % ALPHABET_LENGTH) + FIRST_ASCII_LOWER
                 } else {
-                    charDecode = MESSAGE_CHAR_CODE
+                    charDecode = messageCharCode
                 }
                 cipherMessage += String.fromCharCode(charDecode)
             }
@@ -40,14 +40,14 @@ const cipher = {
             throw new TypeError('User must input an offset and string', 'cipher.js', 40)
         } else {
             for (let i = 0; i < string.length; i++) {
-                const MESSAGE_CHAR_CODE = Number(string[i].charCodeAt(0))
+                const messageCharCode = Number(string[i].charCodeAt(0))
                 let charDecode = ""
-                if ((MESSAGE_CHAR_CODE >= FIRST_ASCII_UPPER) && (MESSAGE_CHAR_CODE <= LAST_ASCII_UPPER)) {
-                    charDecode = ((MESSAGE_CHAR_CODE - LAST_ASCII_UPPER - offset) % ALPHABET_LENGTH) + LAST_ASCII_UPPER
-                } else if ((MESSAGE_CHAR_CODE >= FIRST_ASCII_LOWER) && (MESSAGE_CHAR_CODE <= LAST_ASCII_LOWER)) {
-                    charDecode = ((MESSAGE_CHAR_CODE - LAST_ASCII_LOWER - offset) % ALPHABET_LENGTH) + LAST_ASCII_LOWER
+                if ((messageCharCode >= FIRST_ASCII_UPPER) && (messageCharCode <= LAST_ASCII_UPPER)) {
+                    charDecode = ((messageCharCode - LAST_ASCII_UPPER - offset) % ALPHABET_LENGTH) + LAST_ASCII_UPPER
+                } else if ((messageCharCode >= FIRST_ASCII_LOWER) && (messageCharCode <= LAST_ASCII_LOWER)) {
+                    charDecode = ((messageCharCode - LAST_ASCII_LOWER - offset) % ALPHABET_LENGTH) + LAST_ASCII_LOWER
                 } else {
-                    charDecode = MESSAGE_CHAR_CODE
+                    charDecode = messageCharCode
                 }
                 cipherMessage += String.fromCharCode(charDecode)
             }
